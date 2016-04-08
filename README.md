@@ -21,8 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
-T he four important questions you have to ask your self before designing :
+* The four important questions you have to ask your self before designing
 
 
 
