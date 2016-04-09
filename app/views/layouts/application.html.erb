@@ -4,23 +4,30 @@
   <meta charset="utf-8">
   <title>Bashayer Hijji</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/application.css" media="screen" title="no title" charset="utf-8">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header id="main_navigation" class="clearfix">
-      <a href="index.html" class="name">Bashayer Hijji</a>
-      <nav>
-        <%= link_to "Articals", posts_path %>
 
+  <header id="main_navigation" class="clearfix">
+
+    <%= link_to "Bashayer Hijji", root_path, class: "name"%>
+      <nav>
+        <%= link_to "مقالات", posts_path %>
         <a href="projects.html">مشاريع</a>
         <a href="contacts.html">للتواصل معي</a>
       </nav>
     </header>
 
-<%= yield %>
+ <%= yield %>
+    <footer id="main_footer">
+      <p class="copyright">&copy; 2016 Bashayer Hijji</p>
+      <nav>
+        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+      </nav>
+    </footer>
 
 </body>
 </html>

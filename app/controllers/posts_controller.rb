@@ -18,24 +18,24 @@ def show
 end
 def edit
 end
+
 def update
   if @post.update post_params
-    redirect_to @post, notice: "oh yeah your article is successfuly saved!"
+    redirect_to @post, notice: "oh yeah, your article is successfuly saved!"
   else
     render 'edit'
   end
+end
   def destroy
     @post.destroy
     redirect_to posts_path
   end
 
-end
   private
   def post_params
     params.require(:post).permit(:title,:content)
   end
   def find_post
     @post = Post.find(params[:id])
-
   end
 end

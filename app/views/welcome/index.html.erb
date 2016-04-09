@@ -1,0 +1,33 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 homepage_content">
+      <h2>about</h2>
+      <hr>
+      <p>
+        I am a web developer who dabbles in mobile development from time to time.
+        This is my journey to embrace and internalize the world view of Swift.<br>
+        Follow along as I sort out how to swift-ly implement stuff I’ve needed,<br>
+        from turning PSDs from designers into beautiful apps to integrating web services.
+      </p>
+    </div>
+    <div class="col-2 homepage_content">
+      <h2>Stuff</h2>
+      <hr>
+      <% @posts.each do |post| %>
+        <h3><a href="#"><%= link_to post.title, post %></a></h3>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <% end %>
+    </div>
+    <div class="col-3 homepage_content">
+      <h2>Projects</h2>
+      <hr>
+      <h3>Swift For nowbies</h3>
+      <p class="date">Friday April 10th</p>
+
+      <h3>Dayliy Chalanegs</h3>
+      <p class="date">Friday April 10th</p>
+
+      <h3>To Do List App</h3>
+      <p class="date">Friday April 10th</p>
+    </div>
+
+  </div>
