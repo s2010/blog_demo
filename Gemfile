@@ -17,6 +17,7 @@ ruby '2.2.2'
     gem 'spring'
     gem 'will_paginate', '~> 3.1'
 end
+
 group :development do
     gem 'sqlite3'
 end
