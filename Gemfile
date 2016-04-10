@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.2'
   gem 'rails', '4.2.6'
   gem 'sqlite3'
   gem 'sass-rails', '~> 5.0'
@@ -15,4 +16,11 @@ source 'https://rubygems.org'
     gem 'web-console', '~> 2.0'
     gem 'spring'
     gem 'will_paginate', '~> 3.1'
+end
+group :development do
+    gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
