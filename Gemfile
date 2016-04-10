@@ -11,7 +11,7 @@ ruby '2.2.2'
   gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'redcarpet', '~> 3.3', '>= 3.3.4'
   gem 'pygments.rb', '~> 0.6.3'
-  
+
   group :development, :test do
     gem 'byebug'
     gem 'web-console', '~> 2.0'
@@ -19,12 +19,12 @@ ruby '2.2.2'
     gem 'will_paginate', '~> 3.1'
 end
 
-group :development, :test do
-    gem 'sqlite3'
-    gem 'taps'
-    gem 'rvm'
+group :development do
+  gem 'sqlite3'
 end
+
+
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg'
   gem 'rails_12factor'
 end
