@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Bashayer Hijji</title>
   <link href='//fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Amiri:400,700,400italic&subset=arabic,latin' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -19,7 +20,7 @@
         <%= link_to "مشاريع", projects_path %>
         <%= link_to "للتواصل معي", new_contact_path %>
         <% if user_signed_in? %>
-         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+         <%= link_to "تسجيل الخروج", destroy_user_session_path, method: :delete %>
         <% end %>
       </nav>
     </header>

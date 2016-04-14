@@ -1,6 +1,6 @@
 <div class="wrapper wrapper_padding clearfix">
     <div class="col-1 homepage_content">
-      <h2>about</h2>
+      <h2>عني</h2>
       <hr>
       <p>
         I am a web developer who dabbles in mobile development from time to time.
@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="col-2 homepage_content">
-      <h2>Stuff</h2>
+      <h2>اخر المقالات</h2>
       <hr>
       <% @posts.each do |post| %>
         <h3><a href="#"><%= link_to post.title, post %></a></h3>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="col-3 homepage_content">
-      <h2>Projects</h2>
+      <h2>مشاريع</h2>
       <hr>
       <% @projects.each do |project| %>
         <h3><a href="#"><%= link_to project.title, project %></a></h3>
