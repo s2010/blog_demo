@@ -1,10 +1,3 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
 
 * System dependencies
@@ -22,8 +15,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * The four important questions you have to ask your self before designing
-
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
